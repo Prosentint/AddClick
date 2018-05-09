@@ -92,9 +92,9 @@ import javafx.scene.layout.BorderPane;
             theStack.push(Double.parseDouble(display.getText()));
             display.setText("");
         });
-        OpButton plus = new OpButton("+", (x,y) -> x + y);
+        OpButton buyPlus = new OpButton("buy", (x,y) -> x + y);
         OpButton minus = new OpButton("-", (x,y) -> x - y);
-        OpButton times = new OpButton("*", (x,y) -> x*y);
+        OpButton buyMultiply = new OpButton("buy", (x,y) -> x*y);
         OpButton divide = new OpButton("/", (x,y) -> x/y);
         OpButton pow = new OpButton("**", Math::pow);
         FunctionButton sin = new FunctionButton("sin", x ->
