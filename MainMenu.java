@@ -9,7 +9,7 @@ public class MainMenu extends JFrame
 	public MainMenu()
 	{
 		//Instantiate the labels:
-		timeLimit = new JLabel("Enter the time limit in minuites: ", SwingConstants.RIGHT);
+		timeLimit = new JLabel("Enter the time limit in minutes: ", SwingConstants.RIGHT);
 		moneyGoal = new JLabel("Enter the amount goal: ", SwingConstants.RIGHT);
 
 		//Text fields next:
