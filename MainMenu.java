@@ -8,10 +8,31 @@ public class MainMenu extends JFrame
 
 	public MainMenu()
 	{
+		//Instantiate the labels:
+		timeLimit = new JLabel("Enter the time limit in minuites: ", SwingConstants.RIGHT);
+		moneyGoal = new JLabel("Enter the amount goal: ", SwingConstants.RIGHT);
+
+		//Text fields next:
+		timeLimit = new JTextField(10);
+		moneyGoal = new JTextField(10);
+
+
+		//Buttons too:
+		play = new JButton("Play");
+		exitB = new JButton("Exit");
+
+		//Set the window's title.
 		setTitle("Add Click: Battle Royal");
+
+		//Get the content pane (CP).
+		Container pane = getContentPane();
+
+		//Set the layout.
+		pane.setLayout(new GridLayout(5, 2));
+
+		//Other JFrame stuff.
 		setSize(WIDTH, HEIGHT);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
-
 }
