@@ -1,6 +1,6 @@
 public class addClick extends Application
 {
-  public int CLICKER = 1;
+  public int PERSEC = 1;
   public int PERSEC = 0;
   public int TOTAL = 0;
   public int COUNTER = 0;
@@ -28,5 +28,53 @@ public class addClick extends Application
 
   public int PURCHASECOUNT = 1;
 
-  public static
+  public static void changeCLICKER()
+  {
+    CLICKER = CLICKER * MULTICLICK / DIVICLICK + ADDCLICK - SUBCLICK;
+  }
+
+  public static void changePERSEC()
+  {
+    PERSEC = PERSEC * MULTISEC / DIVISEC + ADDSEC - SUBSEC;
+  }
+
+  public static void raiseCostONEPC()
+  {
+    ONEPCCOST = ONEPCCOST ** 1.1;
+  }
+
+  public static void raiseCostFIVEPC()
+  {
+    FIVEPCCOST = FIVEPCCOST ** 1.1;
+  }
+
+  public static void raiseCostTWOTC()
+  {
+    TWOTCCOST = TWOTCCOST ** 1.1;
+  }
+
+  public static void raiseCostFIVETC()
+  {
+    FIVETCCOST = FIVETCCOST ** 1.1;
+  }
+
+  public static void raiseCostONEPS()
+  {
+    ONEPSCOST = ONEPSCOST ** 1.1;
+  }
+
+  public static void raiseCostFIVEPS()
+  {
+    FIVEPSCOST = FIVEPSCOST ** 1.1;
+  }
+
+  public static void raiseCostTWOTS()
+  {
+    TWOTSCOST = TWOTSCOST ** 1.1;
+  }
+
+  public static void raiseCostFIVETS()
+  {
+    FIVETSCOST = FIVETSCOST ** 1.1;
+  }
 }
