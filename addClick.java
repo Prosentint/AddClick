@@ -37,7 +37,6 @@ public class addClick extends Application
   public static void purchase(x)
   {
     this.x = x;
-
     COUNTER = COUNTER - x;
     x = x ** 1.1;
   }
