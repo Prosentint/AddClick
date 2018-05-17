@@ -136,7 +136,7 @@ public class addClick extends Application
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
     {
-      MULTCLICK = MULTICLICK + 2;
+      MULTICLICK = MULTICLICK + 2;
     }
     else
     {
@@ -148,7 +148,7 @@ public class addClick extends Application
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 75)
     {
-      MULTCLICK = MULTICLICK + 10;
+      MULTICLICK = MULTICLICK + 10;
     }
     else
     {
@@ -160,7 +160,7 @@ public class addClick extends Application
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 79)
     {
-      MULTCLICK = MULTICLICK + 20;
+      MULTICLICK = MULTICLICK + 20;
     }
     else
     {
@@ -172,7 +172,7 @@ public class addClick extends Application
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 60)
     {
-      MULTCLICK = MULTICLICK + 5;
+      MULTICLICK = MULTICLICK + 5;
     }
     else
     {
@@ -184,7 +184,7 @@ public class addClick extends Application
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 65)
     {
-      MULTCLICK = MULTICLICK + 25;
+      MULTICLICK = MULTICLICK + 25;
     }
     else
     {
@@ -196,11 +196,155 @@ public class addClick extends Application
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
     {
-      MULTCLICK = MULTICLICK + 50;
+      MULTICLICK = MULTICLICK + 50;
     }
     else
     {
       DIVICLICK = DIVICLICK + 50;
+    }
+  }
+  public static void purchaseResultONE1PS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 90)
+    {
+      ADDSEC++;
+    }
+    else
+    {
+      SUBSEC++;
+    }
+  }
+  public static void purchaseResultFIVE1PS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 95)
+    {
+      ADDSEC = ADDSEC + 5;
+    }
+    else
+    {
+      SUBSEC = SUBSEC + 5;
+    }
+  }
+  public static void purchaseResultTEN1PS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 99)
+    {
+      ADDSEC = ADDSEC + 10;
+    }
+    else
+    {
+      SUBCLICK = SUBCLICK + 10;
+    }
+  }
+  public static void purchaseResultONE5PS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 80)
+    {
+      ADDSEC = ADDSEC + 5;
+    }
+    else
+    {
+      SUBSEC = SUBSEC + 5;
+    }
+  }
+  public static void purchaseResultFIVE5PS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 85)
+    {
+      ADDSEC = ADDSEC + 25;
+    }
+    else
+    {
+      SUBSEC = SUBSEC + 25;
+    }
+  }
+  public static void purchaseResultTEN5PS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 89)
+    {
+      ADDSEC = ADDSEC + 50;
+    }
+    else
+    {
+      SUBSEC = SUSEC + 50;
+    }
+  }
+  public static void purchaseResultONE2TS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 70)
+    {
+      MULTISEC = MULTISEC + 2;
+    }
+    else
+    {
+      DIVISEC = DIVISEC + 2;
+    }
+  }
+  public static void purchaseResultFIVE2TS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 75)
+    {
+      MULTISEC = MULTISEC + 10;
+    }
+    else
+    {
+      DIVISEC = DIVISEC + 10;
+    }
+  }
+  public static void purchaseResultTEN2TS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 79)
+    {
+      MULTISEC = MULTISEC + 20;
+    }
+    else
+    {
+      DIVISEC = DIVISEC + 20;
+    }
+  }
+  public static void purchaseResultONE5TS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 60)
+    {
+      MULTISEC = MULTISEC + 5;
+    }
+    else
+    {
+      DIVISEC = DIVISEC + 5;
+    }
+  }
+  public static void purchaseResultFIVE5TS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 65)
+    {
+      MULTISEC = MULTISEC + 25;
+    }
+    else
+    {
+      DIVISEC = DIVISEC + 25;
+    }
+  }
+  public static void purchaseResultTEN5TS()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 70)
+    {
+      MULTISEC = MULTISEC + 50;
+    }
+    else
+    {
+      DIVISEC = DIVISEC + 50;
     }
   }
 }
