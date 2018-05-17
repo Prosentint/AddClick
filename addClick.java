@@ -1,10 +1,12 @@
 public class addClick extends Application
 {
-  public int PERSEC = 1;
+  public int PERCLICK = 1;
   public int PERSEC = 0;
   public int TOTAL = 0;
   public int COUNTER = 0;
   public int TIME = 0;
+
+  public int CLICKER = 1;
 
   public int ONEPCCOST = 20;
   public int FIVEPCCOST = 50
@@ -30,8 +32,25 @@ public class addClick extends Application
 
   public static void changeMULTS()
   {
-    CLICKER = CLICKER * MULTICLICK / DIVICLICK + ADDCLICK - SUBCLICK;
-    PERSEC = PERSEC * MULTISEC / DIVISEC + ADDSEC - SUBSEC;
+    if(MULTICLICK == 0)
+    {
+      if(DIVICLICK == 0)
+      {
+        CLICKER = CLICKER + ADDCLICK - SUBCLICK;
+      }
+      else
+      {
+        CLICKER = CLICKER / DIVICLICK + ADDCLICK - SUBCLICK;
+      }
+    }
+    else if(DIVICLICK = 0)
+    {
+      CLICKER = CLICKER * MULTICLICK + ADDCLICK - SUBCLICK;
+    }
+    else
+    {
+      CLICKER = CLICKER * MULTICLICK / DIVICLICK + ADDCLICK - SUBCLICK;
+    }
   }
 
   public static void raisePrice(x)
@@ -61,7 +80,7 @@ public class addClick extends Application
     }
     else
     {
-      SUBCLICK = SUBCLICK - 5;
+      SUBCLICK = SUBCLICK + 5;
     }
   }
   public static void purchaseResultTEN1PC()
@@ -73,7 +92,7 @@ public class addClick extends Application
     }
     else
     {
-      SUBCLICK = SUBCLICK - 10;
+      SUBCLICK = SUBCLICK + 10;
     }
   }
   public static void purchaseResultONE5PC()
@@ -85,7 +104,7 @@ public class addClick extends Application
     }
     else
     {
-      SUBCLICK = SUBCLICK - 5;
+      SUBCLICK = SUBCLICK + 5;
     }
   }
   public static void purchaseResultFIVE5PC()
@@ -97,7 +116,91 @@ public class addClick extends Application
     }
     else
     {
-      SUBCLICK = SUBCLICK - 25;
+      SUBCLICK = SUBCLICK + 25;
+    }
+  }
+  public static void purchaseResultTEN5PC()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 89)
+    {
+      ADDCLICK = ADDCLICK + 50;
+    }
+    else
+    {
+      SUBCLICK = SUBCLICK + 50;
+    }
+  }
+  public static void purchaseResultONE2TC()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 70)
+    {
+      MULTCLICK = MULTICLICK + 2;
+    }
+    else
+    {
+      DIVICLICK = DIVICLICK + 2;
+    }
+  }
+  public static void purchaseResultFIVE2TC()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 75)
+    {
+      MULTCLICK = MULTICLICK + 10;
+    }
+    else
+    {
+      DIVICLICK = DIVICLICK + 10;
+    }
+  }
+  public static void purchaseResultTEN2TC()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 79)
+    {
+      MULTCLICK = MULTICLICK + 20;
+    }
+    else
+    {
+      DIVICLICK = DIVICLICK + 20;
+    }
+  }
+  public static void purchaseResultONE5TC()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 60)
+    {
+      MULTCLICK = MULTICLICK + 5;
+    }
+    else
+    {
+      DIVICLICK = DIVICLICK + 5;
+    }
+  }
+  public static void purchaseResultFIVE5TC()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 65)
+    {
+      MULTCLICK = MULTICLICK + 25;
+    }
+    else
+    {
+      DIVICLICK = DIVICLICK + 25;
+    }
+  }
+  public static void purchaseResultTEN5TC()
+  {
+    int c = (Math.random()*((100-0)+1))+1;
+    if(c <= 70)
+    {
+      MULTCLICK = MULTICLICK + 50;
+    }
+    else
+    {
+      DIVICLICK = DIVICLICK + 50;
     }
   }
 }
