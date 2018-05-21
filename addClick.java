@@ -6,8 +6,6 @@ public class addClick extends Application
   public int COUNTER = 0;
   public int TIME = 0;
 
-  public int CLICKER = 1;
-
   public int ONEPCCOST = 20;
   public int FIVEPCCOST = 50
   public int TWOTCCOST = 100;
@@ -30,36 +28,36 @@ public class addClick extends Application
 
   public int PURCHASECOUNT = 1;
 
-  public static void changeMULTS()
+  public static void changePERCLICK()
   {
     if(MULTICLICK == 0)
     {
       if(DIVICLICK == 0)
       {
-        CLICKER = CLICKER + ADDCLICK - SUBCLICK;
+        PERCLICK = PERCLICK + ADDCLICK - SUBCLICK;
       }
       else
       {
-        CLICKER = CLICKER / DIVICLICK + ADDCLICK - SUBCLICK;
+        PERCLICK = PERCLICK / DIVICLICK + ADDCLICK - SUBCLICK;
       }
     }
     else if(DIVICLICK = 0)
     {
-      CLICKER = CLICKER * MULTICLICK + ADDCLICK - SUBCLICK;
+      PERCLICK = PERCLKICK * MULTICLICK + ADDCLICK - SUBCLICK;
     }
     else
     {
-      CLICKER = CLICKER * MULTICLICK / DIVICLICK + ADDCLICK - SUBCLICK;
+      PERCLICK = PERCLICK * MULTICLICK / DIVICLICK + ADDCLICK - SUBCLICK;
     }
   }
 
-  public static void raisePrice(x)
+  public static void buyAndRaisePrice(x)
   {
     this.x = x;
     COUNTER = COUNTER - x;
     x = x ** 1.1;
   }
-  public static void purchaseResultONE1PC()
+  public static void purchaseONE1PC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 90)
@@ -70,8 +68,9 @@ public class addClick extends Application
     {
       SUBCLICK++;
     }
+    buyAndRaisePrice(ONEPCCOST);
   }
-  public static void purchaseResultFIVE1PC()
+  public static void purchaseFIVE1PC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 95)
@@ -82,8 +81,13 @@ public class addClick extends Application
     {
       SUBCLICK = SUBCLICK + 5;
     }
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
   }
-  public static void purchaseResultTEN1PC()
+  public static void purchaseTEN1PC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 99)
@@ -94,8 +98,18 @@ public class addClick extends Application
     {
       SUBCLICK = SUBCLICK + 10;
     }
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
+    buyAndRaisePrice(ONEPCCOST);
   }
-  public static void purchaseResultONE5PC()
+  public static void purchaseONE5PC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 80)
@@ -106,8 +120,9 @@ public class addClick extends Application
     {
       SUBCLICK = SUBCLICK + 5;
     }
+    buyAndRaisePrice(FIVEPCCOST);
   }
-  public static void purchaseResultFIVE5PC()
+  public static void purchaseFIVE5PC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 85)
@@ -118,8 +133,13 @@ public class addClick extends Application
     {
       SUBCLICK = SUBCLICK + 25;
     }
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
   }
-  public static void purchaseResultTEN5PC()
+  public static void purchaseTEN5PC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 89)
@@ -130,8 +150,18 @@ public class addClick extends Application
     {
       SUBCLICK = SUBCLICK + 50;
     }
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
+    buyAndRaisePrice(FIVEPCCOST);
   }
-  public static void purchaseResultONE2TC()
+  public static void purchaseONE2TC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
@@ -142,8 +172,9 @@ public class addClick extends Application
     {
       DIVICLICK = DIVICLICK + 2;
     }
+    buyAndRaisePrice(TWOTCCOST);
   }
-  public static void purchaseResultFIVE2TC()
+  public static void purchaseFIVE2TC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 75)
@@ -154,8 +185,13 @@ public class addClick extends Application
     {
       DIVICLICK = DIVICLICK + 10;
     }
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
   }
-  public static void purchaseResultTEN2TC()
+  public static void purchaseTEN2TC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 79)
@@ -166,8 +202,18 @@ public class addClick extends Application
     {
       DIVICLICK = DIVICLICK + 20;
     }
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
+    buyAndRaisePrice(TWOTCCOST);
   }
-  public static void purchaseResultONE5TC()
+  public static void purchaseONE5TC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 60)
@@ -178,8 +224,9 @@ public class addClick extends Application
     {
       DIVICLICK = DIVICLICK + 5;
     }
+    buyAndRaisePrice(FIVETCCOST);
   }
-  public static void purchaseResultFIVE5TC()
+  public static void purchaseFIVE5TC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 65)
@@ -190,8 +237,13 @@ public class addClick extends Application
     {
       DIVICLICK = DIVICLICK + 25;
     }
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
   }
-  public static void purchaseResultTEN5TC()
+  public static void purchaseTEN5TC()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
@@ -202,8 +254,18 @@ public class addClick extends Application
     {
       DIVICLICK = DIVICLICK + 50;
     }
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
+    buyAndRaisePrice(FIVETCCOST);
   }
-  public static void purchaseResultONE1PS()
+  public static void purchaseONE1PS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 90)
@@ -214,8 +276,9 @@ public class addClick extends Application
     {
       SUBSEC++;
     }
+    buyAndRaisePrice(ONEPSCOST);
   }
-  public static void purchaseResultFIVE1PS()
+  public static void purchaseFIVE1PS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 95)
@@ -226,8 +289,13 @@ public class addClick extends Application
     {
       SUBSEC = SUBSEC + 5;
     }
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
   }
-  public static void purchaseResultTEN1PS()
+  public static void purchaseTEN1PS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 99)
@@ -238,8 +306,18 @@ public class addClick extends Application
     {
       SUBCLICK = SUBCLICK + 10;
     }
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
+    buyAndRaisePrice(ONEPSCOST);
   }
-  public static void purchaseResultONE5PS()
+  public static void purchaseONE5PS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 80)
@@ -250,8 +328,9 @@ public class addClick extends Application
     {
       SUBSEC = SUBSEC + 5;
     }
+    buyAndRaisePrice(FIVEPSCOST);
   }
-  public static void purchaseResultFIVE5PS()
+  public static void purchaseFIVE5PS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 85)
@@ -262,8 +341,13 @@ public class addClick extends Application
     {
       SUBSEC = SUBSEC + 25;
     }
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
   }
-  public static void purchaseResultTEN5PS()
+  public static void purchaseTEN5PS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 89)
@@ -274,8 +358,18 @@ public class addClick extends Application
     {
       SUBSEC = SUSEC + 50;
     }
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
+    buyAndRaisePrice(FIVEPSCOST);
   }
-  public static void purchaseResultONE2TS()
+  public static void purchaseONE2TS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
@@ -286,8 +380,9 @@ public class addClick extends Application
     {
       DIVISEC = DIVISEC + 2;
     }
+    buyAndRaisePrice(TWOTSCOST);
   }
-  public static void purchaseResultFIVE2TS()
+  public static void purchaseFIVE2TS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 75)
@@ -298,8 +393,13 @@ public class addClick extends Application
     {
       DIVISEC = DIVISEC + 10;
     }
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
   }
-  public static void purchaseResultTEN2TS()
+  public static void purchaseTEN2TS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 79)
@@ -310,8 +410,18 @@ public class addClick extends Application
     {
       DIVISEC = DIVISEC + 20;
     }
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
+    buyAndRaisePrice(TWOTSCOST);
   }
-  public static void purchaseResultONE5TS()
+  public static void purchaseONE5TS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 60)
@@ -322,8 +432,9 @@ public class addClick extends Application
     {
       DIVISEC = DIVISEC + 5;
     }
+    buyAndRaisePrice(FIVETSCOST);
   }
-  public static void purchaseResultFIVE5TS()
+  public static void purchaseFIVE5TS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 65)
@@ -334,8 +445,13 @@ public class addClick extends Application
     {
       DIVISEC = DIVISEC + 25;
     }
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
   }
-  public static void purchaseResultTEN5TS()
+  public static void purchaseTEN5TS()
   {
     int c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
@@ -346,5 +462,15 @@ public class addClick extends Application
     {
       DIVISEC = DIVISEC + 50;
     }
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
+    buyAndRaisePrice(FIVETSCOST);
   }
 }
