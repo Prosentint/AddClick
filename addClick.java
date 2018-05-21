@@ -43,11 +43,33 @@ public class addClick extends Application
     }
     else if(DIVICLICK = 0)
     {
-      PERCLICK = PERCLKICK * MULTICLICK + ADDCLICK - SUBCLICK;
+      PERCLICK = PERCLICK * MULTICLICK + ADDCLICK - SUBCLICK;
     }
     else
     {
       PERCLICK = PERCLICK * MULTICLICK / DIVICLICK + ADDCLICK - SUBCLICK;
+    }
+  }
+  public static void changePERSEC()
+  {
+    if(MULTISEC == 0)
+    {
+      if(DIVISEC == 0)
+      {
+        PERSEC = PERSEC + ADDSEC - SUBSEC;
+      }
+      else
+      {
+        PERSEC = PERSEC / DIVISEC + ADDSEC - SUBSEC;
+      }
+    }
+    else if(DIVISEC = 0)
+    {
+      PERSEC = PERSEC * MULTISEC + ADDSEC - SUBSEC;
+    }
+    else
+    {
+      PERSEC = PERSEC * MULTISEC / DIVISEC + ADDSEC - SUBSEC;
     }
   }
 
@@ -69,6 +91,7 @@ public class addClick extends Application
       SUBCLICK++;
     }
     buyAndRaisePrice(ONEPCCOST);
+    changePERCLICK();
   }
   public static void purchaseFIVE1PC()
   {
@@ -86,6 +109,7 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPCCOST);
     buyAndRaisePrice(ONEPCCOST);
     buyAndRaisePrice(ONEPCCOST);
+    changePERCLICK();
   }
   public static void purchaseTEN1PC()
   {
@@ -108,6 +132,7 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPCCOST);
     buyAndRaisePrice(ONEPCCOST);
     buyAndRaisePrice(ONEPCCOST);
+    changePERCLICK();
   }
   public static void purchaseONE5PC()
   {
@@ -121,6 +146,7 @@ public class addClick extends Application
       SUBCLICK = SUBCLICK + 5;
     }
     buyAndRaisePrice(FIVEPCCOST);
+    changePERCLICK();
   }
   public static void purchaseFIVE5PC()
   {
@@ -138,6 +164,7 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPCCOST);
     buyAndRaisePrice(FIVEPCCOST);
     buyAndRaisePrice(FIVEPCCOST);
+    changePERCLICK();
   }
   public static void purchaseTEN5PC()
   {
@@ -160,6 +187,7 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPCCOST);
     buyAndRaisePrice(FIVEPCCOST);
     buyAndRaisePrice(FIVEPCCOST);
+    changePERCLICK();
   }
   public static void purchaseONE2TC()
   {
@@ -173,6 +201,7 @@ public class addClick extends Application
       DIVICLICK = DIVICLICK + 2;
     }
     buyAndRaisePrice(TWOTCCOST);
+    changePERCLICK();
   }
   public static void purchaseFIVE2TC()
   {
@@ -190,6 +219,7 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTCCOST);
     buyAndRaisePrice(TWOTCCOST);
     buyAndRaisePrice(TWOTCCOST);
+    changePERCLICK();
   }
   public static void purchaseTEN2TC()
   {
@@ -212,6 +242,7 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTCCOST);
     buyAndRaisePrice(TWOTCCOST);
     buyAndRaisePrice(TWOTCCOST);
+    changePERCLICK();
   }
   public static void purchaseONE5TC()
   {
@@ -225,6 +256,7 @@ public class addClick extends Application
       DIVICLICK = DIVICLICK + 5;
     }
     buyAndRaisePrice(FIVETCCOST);
+    changePERCLICK();
   }
   public static void purchaseFIVE5TC()
   {
@@ -242,6 +274,7 @@ public class addClick extends Application
     buyAndRaisePrice(FIVETCCOST);
     buyAndRaisePrice(FIVETCCOST);
     buyAndRaisePrice(FIVETCCOST);
+    changePERCLICK();
   }
   public static void purchaseTEN5TC()
   {
@@ -264,6 +297,7 @@ public class addClick extends Application
     buyAndRaisePrice(FIVETCCOST);
     buyAndRaisePrice(FIVETCCOST);
     buyAndRaisePrice(FIVETCCOST);
+    changePERCLICK();
   }
   public static void purchaseONE1PS()
   {
@@ -277,6 +311,7 @@ public class addClick extends Application
       SUBSEC++;
     }
     buyAndRaisePrice(ONEPSCOST);
+    changePERSEC();
   }
   public static void purchaseFIVE1PS()
   {
@@ -294,6 +329,7 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPSCOST);
     buyAndRaisePrice(ONEPSCOST);
     buyAndRaisePrice(ONEPSCOST);
+    changePERSEC();
   }
   public static void purchaseTEN1PS()
   {
@@ -316,6 +352,7 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPSCOST);
     buyAndRaisePrice(ONEPSCOST);
     buyAndRaisePrice(ONEPSCOST);
+    changePERSEC();
   }
   public static void purchaseONE5PS()
   {
@@ -329,6 +366,7 @@ public class addClick extends Application
       SUBSEC = SUBSEC + 5;
     }
     buyAndRaisePrice(FIVEPSCOST);
+    changePERSEC();
   }
   public static void purchaseFIVE5PS()
   {
@@ -346,6 +384,7 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPSCOST);
     buyAndRaisePrice(FIVEPSCOST);
     buyAndRaisePrice(FIVEPSCOST);
+    changePERSEC();
   }
   public static void purchaseTEN5PS()
   {
@@ -368,6 +407,7 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPSCOST);
     buyAndRaisePrice(FIVEPSCOST);
     buyAndRaisePrice(FIVEPSCOST);
+    changePERSEC();
   }
   public static void purchaseONE2TS()
   {
@@ -381,6 +421,7 @@ public class addClick extends Application
       DIVISEC = DIVISEC + 2;
     }
     buyAndRaisePrice(TWOTSCOST);
+    changePERSEC();
   }
   public static void purchaseFIVE2TS()
   {
@@ -398,6 +439,7 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTSCOST);
     buyAndRaisePrice(TWOTSCOST);
     buyAndRaisePrice(TWOTSCOST);
+    changePERSEC();
   }
   public static void purchaseTEN2TS()
   {
@@ -420,6 +462,7 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTSCOST);
     buyAndRaisePrice(TWOTSCOST);
     buyAndRaisePrice(TWOTSCOST);
+    changePERSEC();
   }
   public static void purchaseONE5TS()
   {
@@ -433,6 +476,7 @@ public class addClick extends Application
       DIVISEC = DIVISEC + 5;
     }
     buyAndRaisePrice(FIVETSCOST);
+    changePERSEC();
   }
   public static void purchaseFIVE5TS()
   {
@@ -450,6 +494,7 @@ public class addClick extends Application
     buyAndRaisePrice(FIVETSCOST);
     buyAndRaisePrice(FIVETSCOST);
     buyAndRaisePrice(FIVETSCOST);
+    changePERSEC();
   }
   public static void purchaseTEN5TS()
   {
@@ -472,5 +517,6 @@ public class addClick extends Application
     buyAndRaisePrice(FIVETSCOST);
     buyAndRaisePrice(FIVETSCOST);
     buyAndRaisePrice(FIVETSCOST);
+    changePERSEC();
   }
 }
