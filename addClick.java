@@ -72,7 +72,6 @@ public class addClick extends Application
       PERSEC = PERSEC * MULTISEC / DIVISEC + ADDSEC - SUBSEC;
     }
   }
-
   public static void buyAndRaisePrice(x)
   {
     this.x = x;
