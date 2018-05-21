@@ -28,6 +28,8 @@ public class addClick extends Application
 
   public int PURCHASECOUNT = 1;
 
+  public int numberPerPurchase = 1;
+
   public static void changePERCLICK()
   {
     if(MULTICLICK == 0)
@@ -71,6 +73,18 @@ public class addClick extends Application
     {
       PERSEC = PERSEC * MULTISEC / DIVISEC + ADDSEC - SUBSEC;
     }
+  }
+  public static void onePerPurchase()
+  {
+    numberPerPurchase = 1;
+  }
+  public static void fivePerPurchase()
+  {
+    numberPerPurchase = 5;
+  }
+  public static void tenPerPurchase()
+  {
+    numberPerPurchase = 10;
   }
   public static void buyAndRaisePrice(x)
   {
