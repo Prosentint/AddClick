@@ -127,7 +127,7 @@ public class addClick
   {
     if(ONEPCCOST > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -148,7 +148,7 @@ public class addClick
   {
     if((ONEPCCOST * 5)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -173,7 +173,7 @@ public class addClick
   {
     if((ONEPCCOST * 10)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -203,7 +203,7 @@ public class addClick
   {
     if(FIVEPCCOST > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -224,7 +224,7 @@ public class addClick
   {
     if((FIVEPCCOST * 5)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -249,7 +249,7 @@ public class addClick
   {
     if((FIVEPCCOST * 10)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -279,7 +279,7 @@ public class addClick
   {
     if(TWOTCCOST > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -300,7 +300,7 @@ public class addClick
   {
     if((TWOTCCOST * 5)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -325,7 +325,7 @@ public class addClick
   {
     if((TWOTCCOST * 10)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -355,7 +355,7 @@ public class addClick
   {
     if(FIVETCCOST > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -376,7 +376,7 @@ public class addClick
   {
     if((FIVETCCOST * 5)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -401,7 +401,7 @@ public class addClick
   {
     if((FIVETCCOST * 10) > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -431,7 +431,7 @@ public class addClick
   {
     if(ONEPSCOST > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -452,7 +452,7 @@ public class addClick
   {
     if((ONEPSCOST * 5)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -477,7 +477,7 @@ public class addClick
   {
     if((ONEPSCOST * 10)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -507,7 +507,7 @@ public class addClick
   {
     if(FIVEPSCOST > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -528,7 +528,7 @@ public class addClick
   {
     if((FIVEPSCOST * 5) > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -553,7 +553,7 @@ public class addClick
   {
     if((FIVEPSCOST * 10)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -583,7 +583,7 @@ public class addClick
   {
     if(TWOTSCOST > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -604,7 +604,7 @@ public class addClick
   {
     if((TWOTSCOST * 5)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -629,7 +629,7 @@ public class addClick
   {
     if((TWOTSCOST * 10)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -659,7 +659,7 @@ public class addClick
   {
     if(FIVETSCOST > COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -680,7 +680,7 @@ public class addClick
   {
     if((FIVETSCOST * 5)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
@@ -705,7 +705,7 @@ public class addClick
   {
     if((FIVETSCOST * 10)> COUNTER)
     {
-      return null;
+      ;
     }
     else
     {
