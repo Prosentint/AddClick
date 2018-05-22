@@ -35,6 +35,16 @@ public class addClick
 
   Timer timer = new Timer();
 
+  public void click()
+  {
+    COUNT += PERCLICK;
+    TOTAL += PERCLICK;
+  }
+  public void second()
+  {
+    COUNT += PERSEC;
+    TOTAL += PERSEC;
+  }
   public void changePERCLICK()
   {
     if(MULTICLICK == 0)
