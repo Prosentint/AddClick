@@ -1,36 +1,37 @@
-public class addClick extends Application
+public class addClick
 {
-  public int PERCLICK = 1;
-  public int PERSEC = 0;
-  public int TOTAL = 0;
-  public int COUNTER = 0;
-  public int TIME = 0;
+  public double PERCLICK = 1;
+  public double PERSEC = 0;
+  public double TOTAL = 0;
+  public double COUNTER = 0;
+  public double TIME = 0;
 
-  public int ONEPCCOST = 20;
-  public int FIVEPCCOST = 50
-  public int TWOTCCOST = 100;
-  public int FIVETCCOST = 200;
+  public double ONEPCCOST = 20;
+  public double FIVEPCCOST = 50;
+  public double TWOTCCOST = 100;
+  public double FIVETCCOST = 200;
 
-  public int ONEPSCOST = 100;
-  public int FIVEPSCOST = 200;
-  public int TWOTSCOST = 400;
-  public int FIVETSCOST = 1000;
+  public double ONEPSCOST = 100;
+  public double FIVEPSCOST = 200;
+  public double TWOTSCOST = 400;
+  public double FIVETSCOST = 1000;
 
-  public int ADDCLICK = 0;
-  public int SUBCLICK = 0;
-  public int MULTICLICK = 0;
-  public int DIVICLICK = 0;
+  public double ADDCLICK = 0;
+  public double SUBCLICK = 0;
+  public double MULTICLICK = 0;
+  public double DIVICLICK = 0;
 
-  public int ADDSEC = 0;
-  public int SUBSEC = 0;
-  public int MULTISEC = 0;
-  public int DIVISEC = 0;
+  public double ADDSEC = 0;
+  public double SUBSEC = 0;
+  public double MULTISEC = 0;
+  public double DIVISEC = 0;
 
-  public int PURCHASECOUNT = 1;
+  public double PURCHASECOUNT = 1;
 
-  public int numberPerPurchase = 1;
+  public double numberPerPurchase = 1;
+  public double type;
 
-  public static void changePERCLICK()
+  public void changePERCLICK()
   {
     if(MULTICLICK == 0)
     {
@@ -43,7 +44,7 @@ public class addClick extends Application
         PERCLICK = PERCLICK / DIVICLICK + ADDCLICK - SUBCLICK;
       }
     }
-    else if(DIVICLICK = 0)
+    else if(DIVICLICK == 0)
     {
       PERCLICK = PERCLICK * MULTICLICK + ADDCLICK - SUBCLICK;
     }
@@ -52,7 +53,7 @@ public class addClick extends Application
       PERCLICK = PERCLICK * MULTICLICK / DIVICLICK + ADDCLICK - SUBCLICK;
     }
   }
-  public static void changePERSEC()
+  public void changePERSEC()
   {
     if(MULTISEC == 0)
     {
@@ -65,7 +66,7 @@ public class addClick extends Application
         PERSEC = PERSEC / DIVISEC + ADDSEC - SUBSEC;
       }
     }
-    else if(DIVISEC = 0)
+    else if(DIVISEC == 0)
     {
       PERSEC = PERSEC * MULTISEC + ADDSEC - SUBSEC;
     }
@@ -74,27 +75,27 @@ public class addClick extends Application
       PERSEC = PERSEC * MULTISEC / DIVISEC + ADDSEC - SUBSEC;
     }
   }
-  public static void onePerPurchase()
+  public void onePerPurchase()
   {
     numberPerPurchase = 1;
   }
-  public static void fivePerPurchase()
+  public void fivePerPurchase()
   {
     numberPerPurchase = 5;
   }
-  public static void tenPerPurchase()
+  public void tenPerPurchase()
   {
     numberPerPurchase = 10;
   }
-  public static void buyAndRaisePrice(x)
+  public void buyAndRaisePrice(double type)
   {
-    this.x = x;
-    COUNTER = COUNTER - x;
-    x = x ** 1.1;
+    this.type = type;
+    COUNTER = COUNTER - type;
+    type = (type) * (type*1.1);
   }
-  public static void purchaseONE1PC()
+  public void purchaseONE1PC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 90)
     {
       ADDCLICK++;
@@ -106,9 +107,9 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPCCOST);
     changePERCLICK();
   }
-  public static void purchaseFIVE1PC()
+  public void purchaseFIVE1PC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 95)
     {
       ADDCLICK = ADDCLICK + 5;
@@ -124,9 +125,9 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPCCOST);
     changePERCLICK();
   }
-  public static void purchaseTEN1PC()
+  public void purchaseTEN1PC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 99)
     {
       ADDCLICK = ADDCLICK + 10;
@@ -147,9 +148,9 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPCCOST);
     changePERCLICK();
   }
-  public static void purchaseONE5PC()
+  public void purchaseONE5PC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 80)
     {
       ADDCLICK = ADDCLICK + 5;
@@ -161,9 +162,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPCCOST);
     changePERCLICK();
   }
-  public static void purchaseFIVE5PC()
+  public void purchaseFIVE5PC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 85)
     {
       ADDCLICK = ADDCLICK + 25;
@@ -179,9 +180,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPCCOST);
     changePERCLICK();
   }
-  public static void purchaseTEN5PC()
+  public void purchaseTEN5PC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 89)
     {
       ADDCLICK = ADDCLICK + 50;
@@ -202,9 +203,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPCCOST);
     changePERCLICK();
   }
-  public static void purchaseONE2TC()
+  public void purchaseONE2TC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
     {
       MULTICLICK = MULTICLICK + 2;
@@ -216,9 +217,9 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTCCOST);
     changePERCLICK();
   }
-  public static void purchaseFIVE2TC()
+  public void purchaseFIVE2TC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 75)
     {
       MULTICLICK = MULTICLICK + 10;
@@ -234,9 +235,9 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTCCOST);
     changePERCLICK();
   }
-  public static void purchaseTEN2TC()
+  public void purchaseTEN2TC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 79)
     {
       MULTICLICK = MULTICLICK + 20;
@@ -257,9 +258,9 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTCCOST);
     changePERCLICK();
   }
-  public static void purchaseONE5TC()
+  public void purchaseONE5TC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 60)
     {
       MULTICLICK = MULTICLICK + 5;
@@ -271,9 +272,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVETCCOST);
     changePERCLICK();
   }
-  public static void purchaseFIVE5TC()
+  public void purchaseFIVE5TC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 65)
     {
       MULTICLICK = MULTICLICK + 25;
@@ -289,9 +290,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVETCCOST);
     changePERCLICK();
   }
-  public static void purchaseTEN5TC()
+  public void purchaseTEN5TC()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
     {
       MULTICLICK = MULTICLICK + 50;
@@ -312,9 +313,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVETCCOST);
     changePERCLICK();
   }
-  public static void purchaseONE1PS()
+  public void purchaseONE1PS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 90)
     {
       ADDSEC++;
@@ -326,9 +327,9 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPSCOST);
     changePERSEC();
   }
-  public static void purchaseFIVE1PS()
+  public void purchaseFIVE1PS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 95)
     {
       ADDSEC = ADDSEC + 5;
@@ -344,9 +345,9 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPSCOST);
     changePERSEC();
   }
-  public static void purchaseTEN1PS()
+  public void purchaseTEN1PS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 99)
     {
       ADDSEC = ADDSEC + 10;
@@ -367,9 +368,9 @@ public class addClick extends Application
     buyAndRaisePrice(ONEPSCOST);
     changePERSEC();
   }
-  public static void purchaseONE5PS()
+  public void purchaseONE5PS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 80)
     {
       ADDSEC = ADDSEC + 5;
@@ -381,9 +382,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPSCOST);
     changePERSEC();
   }
-  public static void purchaseFIVE5PS()
+  public void purchaseFIVE5PS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 85)
     {
       ADDSEC = ADDSEC + 25;
@@ -399,16 +400,16 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPSCOST);
     changePERSEC();
   }
-  public static void purchaseTEN5PS()
+  public void purchaseTEN5PS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 89)
     {
       ADDSEC = ADDSEC + 50;
     }
     else
     {
-      SUBSEC = SUSEC + 50;
+      SUBSEC = SUBSEC + 50;
     }
     buyAndRaisePrice(FIVEPSCOST);
     buyAndRaisePrice(FIVEPSCOST);
@@ -422,9 +423,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVEPSCOST);
     changePERSEC();
   }
-  public static void purchaseONE2TS()
+  public void purchaseONE2TS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
     {
       MULTISEC = MULTISEC + 2;
@@ -436,9 +437,9 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTSCOST);
     changePERSEC();
   }
-  public static void purchaseFIVE2TS()
+  public void purchaseFIVE2TS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 75)
     {
       MULTISEC = MULTISEC + 10;
@@ -454,9 +455,9 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTSCOST);
     changePERSEC();
   }
-  public static void purchaseTEN2TS()
+  public void purchaseTEN2TS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 79)
     {
       MULTISEC = MULTISEC + 20;
@@ -477,9 +478,9 @@ public class addClick extends Application
     buyAndRaisePrice(TWOTSCOST);
     changePERSEC();
   }
-  public static void purchaseONE5TS()
+  public void purchaseONE5TS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 60)
     {
       MULTISEC = MULTISEC + 5;
@@ -491,9 +492,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVETSCOST);
     changePERSEC();
   }
-  public static void purchaseFIVE5TS()
+  public void purchaseFIVE5TS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 65)
     {
       MULTISEC = MULTISEC + 25;
@@ -509,9 +510,9 @@ public class addClick extends Application
     buyAndRaisePrice(FIVETSCOST);
     changePERSEC();
   }
-  public static void purchaseTEN5TS()
+  public void purchaseTEN5TS()
   {
-    int c = (Math.random()*((100-0)+1))+1;
+    double c = (Math.random()*((100-0)+1))+1;
     if(c <= 70)
     {
       MULTISEC = MULTISEC + 50;
