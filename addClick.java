@@ -1,10 +1,12 @@
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class addClick
 {
   public double PERCLICK = 1;
   public double PERSEC = 0;
   public double TOTAL = 0;
   public double COUNTER = 0;
-  public double TIME = 0;
 
   public double ONEPCCOST = 20;
   public double FIVEPCCOST = 50;
@@ -30,6 +32,8 @@ public class addClick
 
   public double numberPerPurchase = 1;
   public double type;
+
+  Timer timer = new Timer();
 
   public void changePERCLICK()
   {
