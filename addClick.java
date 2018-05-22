@@ -37,12 +37,12 @@ public class addClick
 
   public void click()
   {
-    COUNT += PERCLICK;
+    COUNTER += PERCLICK;
     TOTAL += PERCLICK;
   }
   public void second()
   {
-    COUNT += PERSEC;
+    COUNTER += PERSEC;
     TOTAL += PERSEC;
   }
   public void changePERCLICK()
