@@ -12,4 +12,7 @@ public class Seconds extends TimerTask
     x += z;
     y += z;
   }
+
+  Timer timer = new Timer();
+  timer.schedule(new Seconds(), 0 ,1000);
 }
