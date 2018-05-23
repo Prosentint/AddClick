@@ -1,3 +1,6 @@
+Timer timer = new Timer();
+timer.schedule(new Seconds(), 0 ,1000);
+
 public class addClick
 {
   public double PERCLICK = 1;
